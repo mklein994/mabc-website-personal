@@ -1,0 +1,10 @@
+dist/
+# managed by pnpm
+pnpm-lock.yaml
+public/
+coverage/
+.eslint-config-inspector/
+.eslintcache
+tsconfig.*-temp.json
+src/tokens/vendor/
+src/assets/generated/
