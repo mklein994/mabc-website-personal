@@ -8,6 +8,10 @@ const resolve = (path: string) => fileURLToPath(new URL(path, import.meta.url));
 
 // https://vite.dev/config/
 export default defineConfig({
+  define: {
+    __VUE_OPTIONS_API__: false,
+  },
+
   resolve: {
     alias: {
       "@": resolve("./src"),
