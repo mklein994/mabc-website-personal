@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import { ChurchIcon } from "@lucide/vue";
+
+import HeroSection from "@/features/home/HeroSection.vue";
+</script>
+
 <template>
-  <h1>Ya made it!</h1>
+  <HeroSection />
+  <ChurchIcon class="tw:text-blue-500 tw:size-16" />
 </template>
