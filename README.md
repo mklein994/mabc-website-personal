@@ -3,7 +3,7 @@
 To get started, clone the repository, install Node with [`nvm`](https://github.com/nvm-sh/nvm), get `pnpm` with `corepack`, then install the dependencies:
 
 ```console
-$ nvm install
+$ nvm install # uses .nvmrc
 $ npm install --global corepack@latest
 $ corepack enable
 $ pnpm install
