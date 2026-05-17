@@ -1,3 +1,5 @@
+/// <reference types="vitest/config" />
+
 import { fileURLToPath } from "node:url";
 
 import tailwindcss from "@tailwindcss/vite";
@@ -12,12 +14,18 @@ const resolve = (path: string) => fileURLToPath(new URL(path, import.meta.url));
 export default defineConfig({
   define: {
     __VUE_OPTIONS_API__: false,
+    "import.meta.vitest": "undefined",
   },
 
   resolve: {
     alias: {
       "@": resolve("./src"),
     },
+  },
+
+  test: {
+    environment: "happy-dom",
+    includeSource: ["./src/**/*.ts", "./config/**/*.ts"],
   },
 
   plugins: [

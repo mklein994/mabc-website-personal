@@ -11,7 +11,9 @@
     "lint": "eslint .",
     "lint:style": "stylelint 'src/**/*.{vue,css}'",
     "lint:ci": "eslint --max-warnings 0 && pnpm run lint:style && prettier --check .",
-    "typecheck": "vue-tsc -b"
+    "typecheck": "vue-tsc -b",
+    "test": "vitest",
+    "test:run": "vitest run"
   },
   "dependencies": {
     "@lucide/vue": "^1.16.0",
