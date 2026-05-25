@@ -47,7 +47,11 @@ export default defineConfig([
     languageOptions: {
       parser: tseslint.parser,
       parserOptions: {
-        project: ["./tsconfig.app.json", "./tsconfig.node.json"],
+        project: [
+          "./tsconfig.app.json",
+          "./tsconfig.node.json",
+          "./functions/tsconfig.json",
+        ],
       },
     },
     rules: {
@@ -108,7 +112,11 @@ export default defineConfig([
     languageOptions: {
       parserOptions: {
         parser: tseslint.parser,
-        project: ["./tsconfig.app.json", "./tsconfig.node.json"],
+        project: [
+          "./tsconfig.app.json",
+          "./tsconfig.node.json",
+          "./functions/tsconfig.json",
+        ],
         extraFileExtensions: [".vue"],
         tsconfigRootDir: resolve("."),
       },
