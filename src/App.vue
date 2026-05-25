@@ -1,10 +1,8 @@
 <script setup lang="ts">
-import { ChurchIcon } from "@lucide/vue";
-
 import HeroSection from "@/features/home/HeroSection.vue";
 </script>
 
 <template>
   <HeroSection />
-  <ChurchIcon class="tw:text-blue-500 tw:size-16" />
+  <img :src="'/r2/mabc_hero.png'" alt="MABC Hero Image" />
 </template>
